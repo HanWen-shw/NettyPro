@@ -13,7 +13,7 @@ public class NIOServer {
         //得到一个Selecor对象
         Selector selector = Selector.open();
         //绑定一个端口6666, 在服务器端监听
-        serverSocketChannel.socket().bind(new InetSocketAddress(6666));
+        serverSocketChannel.socket().bind(new InetSocketAddress(6688));
         //设置为非阻塞
         serverSocketChannel.configureBlocking(false);
         //把 serverSocketChannel 注册到  selector 关心 事件为 OP_ACCEPT
@@ -55,7 +55,10 @@ public class NIOServer {
                     SocketChannel channel = (SocketChannel)key.channel();
                     //获取到该channel关联的buffer
                     ByteBuffer buffer = (ByteBuffer)key.attachment();
-                    channel.read(buffer);
+                    int read = channel.read(buffer);
+                    if (read == -1){ //客户端非正常关闭，服务端获取到的read就一直是-1，所以一直会有读事件如果不判断会进入死循环
+                        break;
+                    }
                     System.out.println("form 客户端 " + new String(buffer.array()));
                 }
                 //手动从集合中移动当前的selectionKey, 防止重复操作
