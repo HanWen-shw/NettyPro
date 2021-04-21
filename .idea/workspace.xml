@@ -11,9 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f684670f-691c-4305-94c9-255ab4837254" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shw/nio/groupchat/GroupChatClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shw/nio/groupchat/GroupChatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shw/nio/zerocopy/NewIOClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shw/nio/zerocopy/NewIOServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shw/nio/zerocopy/OldIOClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shw/nio/zerocopy/OldIOServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shw/nio/NIOClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shw/nio/NIOClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shw/nio/NIOServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shw/nio/NIOServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/shw/nio" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -54,16 +58,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/java/com/shw/nio" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NIOClient">
-    <configuration name="MappedByteBufferTeat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.shw.nio.MappedByteBufferTeat" />
+  <component name="RunManager" selected="Application.NewIOClient">
+    <configuration name="GroupChatClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shw.nio.groupchat.GroupChatClient" />
       <module name="NettyPro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.shw.nio.*" />
+          <option name="PATTERN" value="com.shw.nio.groupchat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,12 +76,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NIOClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.shw.nio.NIOClient" />
+    <configuration name="NewIOClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shw.nio.zerocopy.NewIOClient" />
       <module name="NettyPro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.shw.nio.*" />
+          <option name="PATTERN" value="com.shw.nio.zerocopy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NIOFileChannel03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.shw.nio.NIOFileChannel03" />
+    <configuration name="NewIOServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shw.nio.zerocopy.NewIOServer" />
       <module name="NettyPro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.shw.nio.*" />
+          <option name="PATTERN" value="com.shw.nio.zerocopy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NIOFileChannel04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.shw.nio.NIOFileChannel04" />
+    <configuration name="OldIOClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shw.nio.zerocopy.OldIOClient" />
       <module name="NettyPro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.shw.nio.*" />
+          <option name="PATTERN" value="com.shw.nio.zerocopy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NIOServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.shw.nio.NIOServer" />
+    <configuration name="OldIOServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shw.nio.zerocopy.OldIOServer" />
       <module name="NettyPro" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.shw.nio.*" />
+          <option name="PATTERN" value="com.shw.nio.zerocopy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,13 +128,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.GroupChatClient" />
+      <item itemvalue="Application.NewIOClient" />
+      <item itemvalue="Application.NewIOServer" />
+      <item itemvalue="Application.OldIOClient" />
+      <item itemvalue="Application.OldIOServer" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NIOClient" />
-        <item itemvalue="Application.NIOServer" />
-        <item itemvalue="Application.MappedByteBufferTeat" />
-        <item itemvalue="Application.NIOFileChannel04" />
-        <item itemvalue="Application.NIOFileChannel03" />
+        <item itemvalue="Application.NewIOClient" />
+        <item itemvalue="Application.NewIOServer" />
+        <item itemvalue="Application.OldIOClient" />
+        <item itemvalue="Application.OldIOServer" />
+        <item itemvalue="Application.GroupChatClient" />
       </list>
     </recent_temporary>
   </component>
@@ -162,31 +174,51 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="184" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618885124195">
+      <screen x="0" y="25" width="1440" height="794" />
+    </state>
+    <state x="184" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.794@0.25.1440.794" timestamp="1618885124195" />
     <state x="100" y="125" width="1240" height="590" key="DiffContextDialog" timestamp="1618834721342">
       <screen x="0" y="25" width="1440" height="790" />
     </state>
     <state x="100" y="125" width="1240" height="590" key="DiffContextDialog/0.25.1440.790@0.25.1440.790" timestamp="1618834721342" />
     <state x="100" y="125" width="1240" height="590" key="DiffContextDialog/0.25.1440.791@0.25.1440.791" timestamp="1618724913020" />
-    <state width="1398" height="39" key="GridCell.Tab.0.bottom" timestamp="1618836305549">
-      <screen x="0" y="25" width="1440" height="790" />
+    <state width="1398" height="218" key="GridCell.Tab.0.bottom" timestamp="1618886041940">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
-    <state width="1398" height="39" key="GridCell.Tab.0.bottom/0.25.1440.790@0.25.1440.790" timestamp="1618836305549" />
+    <state width="1398" height="98" key="GridCell.Tab.0.bottom/0.25.1440.790@0.25.1440.790" timestamp="1618836926213" />
     <state width="1398" height="305" key="GridCell.Tab.0.bottom/0.25.1440.791@0.25.1440.791" timestamp="1618796686768" />
-    <state width="1398" height="39" key="GridCell.Tab.0.center" timestamp="1618836305548">
-      <screen x="0" y="25" width="1440" height="790" />
+    <state width="1398" height="217" key="GridCell.Tab.0.bottom/0.25.1440.794@0.25.1440.794" timestamp="1618885243938" />
+    <state width="1398" height="217" key="GridCell.Tab.0.bottom/0.25.1440.797@0.25.1440.797" timestamp="1618885022806" />
+    <state width="1398" height="218" key="GridCell.Tab.0.bottom/0.25.1440.801@0.25.1440.801" timestamp="1618885966796" />
+    <state width="1398" height="218" key="GridCell.Tab.0.bottom/0.25.1440.804@0.25.1440.804" timestamp="1618886041940" />
+    <state width="1398" height="218" key="GridCell.Tab.0.center" timestamp="1618886041938">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
-    <state width="1398" height="39" key="GridCell.Tab.0.center/0.25.1440.790@0.25.1440.790" timestamp="1618836305548" />
+    <state width="1398" height="98" key="GridCell.Tab.0.center/0.25.1440.790@0.25.1440.790" timestamp="1618836926212" />
     <state width="1398" height="305" key="GridCell.Tab.0.center/0.25.1440.791@0.25.1440.791" timestamp="1618796686767" />
-    <state width="1398" height="39" key="GridCell.Tab.0.left" timestamp="1618836305547">
-      <screen x="0" y="25" width="1440" height="790" />
+    <state width="1398" height="217" key="GridCell.Tab.0.center/0.25.1440.794@0.25.1440.794" timestamp="1618885243937" />
+    <state width="1398" height="217" key="GridCell.Tab.0.center/0.25.1440.797@0.25.1440.797" timestamp="1618885022805" />
+    <state width="1398" height="218" key="GridCell.Tab.0.center/0.25.1440.801@0.25.1440.801" timestamp="1618885966795" />
+    <state width="1398" height="218" key="GridCell.Tab.0.center/0.25.1440.804@0.25.1440.804" timestamp="1618886041938" />
+    <state width="1398" height="218" key="GridCell.Tab.0.left" timestamp="1618886041938">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
-    <state width="1398" height="39" key="GridCell.Tab.0.left/0.25.1440.790@0.25.1440.790" timestamp="1618836305547" />
+    <state width="1398" height="98" key="GridCell.Tab.0.left/0.25.1440.790@0.25.1440.790" timestamp="1618836926211" />
     <state width="1398" height="305" key="GridCell.Tab.0.left/0.25.1440.791@0.25.1440.791" timestamp="1618796686766" />
-    <state width="1398" height="39" key="GridCell.Tab.0.right" timestamp="1618836305548">
-      <screen x="0" y="25" width="1440" height="790" />
+    <state width="1398" height="217" key="GridCell.Tab.0.left/0.25.1440.794@0.25.1440.794" timestamp="1618885243937" />
+    <state width="1398" height="217" key="GridCell.Tab.0.left/0.25.1440.797@0.25.1440.797" timestamp="1618885022805" />
+    <state width="1398" height="218" key="GridCell.Tab.0.left/0.25.1440.801@0.25.1440.801" timestamp="1618885966794" />
+    <state width="1398" height="218" key="GridCell.Tab.0.left/0.25.1440.804@0.25.1440.804" timestamp="1618886041938" />
+    <state width="1398" height="218" key="GridCell.Tab.0.right" timestamp="1618886041939">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
-    <state width="1398" height="39" key="GridCell.Tab.0.right/0.25.1440.790@0.25.1440.790" timestamp="1618836305548" />
+    <state width="1398" height="98" key="GridCell.Tab.0.right/0.25.1440.790@0.25.1440.790" timestamp="1618836926212" />
     <state width="1398" height="305" key="GridCell.Tab.0.right/0.25.1440.791@0.25.1440.791" timestamp="1618796686767" />
+    <state width="1398" height="217" key="GridCell.Tab.0.right/0.25.1440.794@0.25.1440.794" timestamp="1618885243938" />
+    <state width="1398" height="217" key="GridCell.Tab.0.right/0.25.1440.797@0.25.1440.797" timestamp="1618885022806" />
+    <state width="1398" height="218" key="GridCell.Tab.0.right/0.25.1440.801@0.25.1440.801" timestamp="1618885966795" />
+    <state width="1398" height="218" key="GridCell.Tab.0.right/0.25.1440.804@0.25.1440.804" timestamp="1618886041939" />
     <state x="311" y="25" key="SettingsEditor" timestamp="1618796642052">
       <screen x="0" y="25" width="1440" height="791" />
     </state>
