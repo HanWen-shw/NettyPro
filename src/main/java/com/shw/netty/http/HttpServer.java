@@ -13,10 +13,10 @@ public class HttpServer {
 
         try {
             ServerBootstrap bootstrap = new ServerBootstrap();
-            bootstrap.group(bossGroup,workGroup).channel(NioServerSocketChannel.class).childHandler(new HttpServerInitializer());
+            bootstrap.group(bossGroup, workGroup).channel(NioServerSocketChannel.class).childHandler(new HttpServerInitializer());
             ChannelFuture cf = bootstrap.bind(6999).sync();
             cf.channel().closeFuture().sync();
-        }finally {
+        } finally {
             bossGroup.shutdownGracefully();
             workGroup.shutdownGracefully();
         }
